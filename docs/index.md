@@ -402,7 +402,7 @@ $intake->from_location = \CdekSDK2\BaseTypes\Location::create([
     'country_code' => 'RU'
 ]);
 
-$result = $cdek->webhooks()->add($intake);
+$result = $cdek->intakes()->add($intake);
 if ($result->hasErrors()) {
     // Обрабатываем ошибки
 }
